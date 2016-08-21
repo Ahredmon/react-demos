@@ -24,6 +24,14 @@ var fbMainComponent = React.createClass({
             ,maxNumber: 15
         };
     }
+    ,getInitialState: function() {
+        return {value: 1};
+    }
+    ,valueChange: function(e) {
+        this.setState({
+            value: e.target.value,
+        });
+    }
     ,render: function() {
         // factory not working 
         //var fbItemFactory = React.createFactory(fbItem);        
@@ -43,7 +51,17 @@ var fbMainComponent = React.createClass({
         ,React.createElement(fbItem,{data:"fizz"})
         ,React.createElement(fbItem,{data:"7"})
         );
-        return fbList;
+        var fbView = React.DOM.div(
+            null
+            ,React.DOM.input({
+                type: 'number'
+                ,value: this.state.value
+                ,onChange: this.valueChange
+            })
+            ,React.DOM.span(null, this.state.value)
+            ,fbList
+        );
+        return fbView;
     }
 });
 
