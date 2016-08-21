@@ -76,3 +76,33 @@ ReactDOM.render(
     ,document.getElementById("app")
 )
 ```
+### basic - event listener
+```javascript
+var InputTextComponent = React.createClass({
+    // define field data types
+    propTypes: {data: React.PropTypes.string}
+    // set initial field values
+    ,getInitialState: function() {
+        return {data: 'init'};
+    }
+    // set event listener function
+    ,onDataChange: function(event) {
+        // update values of fields
+        this.setState({
+            data: event.target.value
+        });
+    }
+    // executed when element is rendered, must be defined
+    ,render: function() {
+        return React.DOM.div(
+            null
+            ,React.DOM.input({
+                type: 'text'
+                ,value: this.state.data
+                ,onChange: this.onDataChange // event listener
+            })
+            ,React.DOM.h3(null, this.state.data)
+        )
+    }
+})
+```

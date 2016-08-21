@@ -15,21 +15,23 @@ var fbItemFactory = React.createFactory(fbItem);
 // custom list component
 var fbMainComponent = React.createClass({
     propTypes: {
-        minNumber: React.PropTypes.number
+        inputValue: React.PropTypes.number
+        ,minNumber: React.PropTypes.number
         ,maxNumber: React.PropTypes.number
     }
     ,getDefaultProps: function() {
         return {
-            minNumber: 1
+            inputValue: 1
+            ,minNumber: 1
             ,maxNumber: 15
         };
     }
     ,getInitialState: function() {
-        return {value: 1};
+        return {inputValue: 7};
     }
     ,valueChange: function(e) {
         this.setState({
-            value: e.target.value,
+            inputValue: e.target.value
         });
     }
     ,render: function() {
@@ -49,16 +51,16 @@ var fbMainComponent = React.createClass({
         ,React.createElement(fbItem,{data:"4"})
         ,React.createElement(fbItem,{data:"buzz"})
         ,React.createElement(fbItem,{data:"fizz"})
-        ,React.createElement(fbItem,{data:"7"})
+        ,React.createElement(fbItem,{data:""+this.state.inputValue})
         );
         var fbView = React.DOM.div(
             null
             ,React.DOM.input({
                 type: 'number'
-                ,value: this.state.value
+                ,value: this.state.inputValue
                 ,onChange: this.valueChange
             })
-            ,React.DOM.span(null, this.state.value)
+            ,React.DOM.span(null, this.state.inputValue)
             ,fbList
         );
         return fbView;
