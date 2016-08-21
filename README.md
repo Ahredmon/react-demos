@@ -1,25 +1,24 @@
 # React JS - demos
 - greeting mundi
-- fizzbuzz
+- fizz buzz
 - todo list
 - consume API
 
 ---
 # code snippets
 
-### basic - rendering a component
+### basic - render a component
 ```javascript
 ReactDOM.render(
     // React built-in component
     // React.DOM.*(null or attributes-object, content or component)
-    React.DOM.h1(null, "this content is in <h1>tag</h1>");
-    ,
+    React.DOM.h1(null, "this content is in <h1>tag</h1>")
     // DOM location to render at, i.e. inject as child into DOM tree
-    document.getElementById("app")
+    ,document.getElementById("app")
 )
 ```
 
-### basic - config built-in DOM components
+### basic - config a built-in DOM components
 ```javascript
 React.DOM.div(
     {
@@ -48,15 +47,14 @@ var myCustomComponent = React.createClass({
         val: React.PropTypes.string
         ,data: React.PropTypes.string.isRequired
     }
-    ,
     // optional - set default values for non-required properties
-    getDefaultProps: function() {
+    ,getDefaultProps: function() {
         return {val: "testing property defaults"};
     }
 });
 ```
 
-### basic - rendering custom components
+### basic - render a custom component
 ```javascript
 ReactDOM.render(
     // custom React component
@@ -64,19 +62,17 @@ ReactDOM.render(
         val: "a value"
         ,data: "some data"
     })
-    ,
     // DOM location to render at
-    document.getElementById("app")
+    ,document.getElementById("app")
 )
 ```
-### basic - rendering custom component using factory
+### basic - render a custom component using a factory
 ```javascript
 var myComponentFactory = React.createFactory(myCustomComponent);
 ReactDOM.render(
-    // create custom React component using factory
-    React.myComponentFactory()
-    ,
+    // create custom React component using factory.  *optional parameters
+    React.myComponentFactory(*props, *children)
     // DOM location to render at
-    document.getElementById("app")
+    ,document.getElementById("app")
 )
 ```
