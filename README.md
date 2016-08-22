@@ -1,5 +1,5 @@
 # React JS - intro materials
-### sections
+### sections menu
 * [app demos](#demos)
 * [terms](#terms)
 * [code samples](#code-snippets)
@@ -143,11 +143,11 @@ var InputTextComponent = React.createClass({
 
 ### install package + gulpfile on Node JS
 ###### NOTE: open a Node command prompt + goTo project directory
-run package.json + install dependencies
+- run package.json + install dependencies
 ```
 npm install
 ```
-turn on Gulp automation
+- turn on Gulp automation
 ```
 npm start
 ```
