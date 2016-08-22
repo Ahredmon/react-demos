@@ -142,7 +142,7 @@ var InputTextComponent = React.createClass({
 # setup
 
 ### install package + gulpfile on Node JS
-#### from Node command prompt + project directory
+###### NOTE: open a Node command prompt + goTo project directory
 run package.json + install dependencies
 ```
 npm install
@@ -154,3 +154,4 @@ npm start
 
 ---
 # coda
+</>
