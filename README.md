@@ -1,19 +1,13 @@
 # React JS - intro materials
-### sections menu
+###### sections menu
 * [app demos](#demos)
 * [terms](#terms)
 * [code samples](#code-snippets)
 * [setup apps](#setup)
 
 ---
-# demos
-- greeting mundi
-- fizz buzz
-- todo list
-- consume API
-
----
 # terms
+
 - JSX
 - Virtual DOM
 - React.createClass
@@ -97,6 +91,7 @@ ReactDOM.render(
     ,document.getElementById("app")
 )
 ```
+
 ### basic - render a custom component using a factory
 ```javascript
 var myComponentFactory = React.createFactory(myCustomComponent);
@@ -107,6 +102,7 @@ ReactDOM.render(
     ,document.getElementById("app")
 )
 ```
+
 ### basic - event listener
 ```javascript
 var InputTextComponent = React.createClass({
@@ -147,10 +143,17 @@ var InputTextComponent = React.createClass({
 ```
 npm install
 ```
-- turn on Gulp automation
+- activate Gulp automation
 ```
 npm start
 ```
+
+---
+# demos
+- greeting mundi
+- fizz buzz
+- todo list
+- consume API (in design phase)
 
 ---
 # coda
