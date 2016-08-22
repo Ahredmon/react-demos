@@ -1,11 +1,40 @@
-# React JS - demos
+# React JS - intro
+* [app demos](#demos)
+* [terms](#terms)
+* [code samples](#code-snippets)
+
+---
+# demos
 - greeting mundi
 - fizz buzz
 - todo list
 - consume API
 
 ---
-# code snippets
+# terms
+- JSX
+- Virtual DOM
+- React.createClass
+- render (method)
+- React.render
+- state
+- getInitialState
+- setState
+- props
+- propTypes
+- getDefaultProps
+- Component LifeCycle
+- componentWillMount
+- componentDidMount
+- componentWillReceiveProps
+- componentWillUnmount
+- Events
+- onClick
+- onSubmit
+- onChange
+
+---
+# code-snippets
 
 ### basic - render a component
 ```javascript
@@ -106,3 +135,6 @@ var InputTextComponent = React.createClass({
     }
 })
 ```
+
+---
+# coda
