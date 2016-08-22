@@ -1,7 +1,9 @@
-# React JS - intro
+# React JS - intro materials
+### sections
 * [app demos](#demos)
 * [terms](#terms)
 * [code samples](#code-snippets)
+* [setup apps](#setup)
 
 ---
 # demos
@@ -134,6 +136,20 @@ var InputTextComponent = React.createClass({
         )
     }
 })
+```
+
+---
+# setup
+
+### install package + gulpfile on Node JS
+#### from Node command prompt + project directory
+run package.json + install dependencies
+```
+npm install
+```
+turn on Gulp automation
+```
+npm start
 ```
 
 ---
