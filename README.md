@@ -1,5 +1,5 @@
 # React JS - intro materials
-###### sections menu
+###### menu
 * [app demos](#demos)
 * [terms](#terms)
 * [code samples](#code-snippets)
@@ -7,6 +7,7 @@
 
 ---
 # terms
+###### [top](#menu)
 
 - JSX
 - Virtual DOM
@@ -31,6 +32,7 @@
 
 ---
 # code-snippets
+###### [top](#menu)
 
 ### basic - render a component
 ```javascript
@@ -136,6 +138,7 @@ var InputTextComponent = React.createClass({
 
 ---
 # setup
+###### [top](#menu)
 
 ### install package + gulpfile on Node JS
 ###### NOTE: open a Node command prompt + goTo project directory
@@ -150,6 +153,8 @@ npm start
 
 ---
 # demos
+###### [top](#menu)
+
 - greeting mundi
 - fizz buzz
 - todo list
